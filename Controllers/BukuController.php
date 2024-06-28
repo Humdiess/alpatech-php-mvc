@@ -40,7 +40,7 @@ class BukuController extends BaseController
         $publisher_id = $_POST['publisher_id']; // Mengambil data 'publisher_id' dari form
         $author_id = $_POST['author_id']; // Mengambil data 'author_id' dari form
         $this->Database->create(compact('name', 'publisher_id', 'author_id')); // Menyimpan data buku ke database
-        redirect('/buku'); // Mengalihkan pengguna ke halaman daftar buku
+        redirect('buku'); // Mengalihkan pengguna ke halaman daftar buku
     }
 
     // Fungsi untuk menampilkan form edit data buku
@@ -59,13 +59,13 @@ class BukuController extends BaseController
         $publisher_id = $_POST['publisher_id']; // Mengambil data 'publisher_id' dari form
         $author_id = $_POST['author_id']; // Mengambil data 'author_id' dari form
         $this->Database->update($id, compact('name', 'publisher_id', 'author_id')); // Memperbarui data buku di database
-        redirect('/buku'); // Mengalihkan pengguna ke halaman daftar buku
+        redirect('buku'); // Mengalihkan pengguna ke halaman daftar buku
     }
 
     // Fungsi untuk menghapus data buku dari database
     public function delete($id)
     {
         $this->Database->delete($id); // Menghapus data buku berdasarkan ID dari database
-        redirect('/buku'); // Mengalihkan pengguna ke halaman daftar buku
+        redirect('buku'); // Mengalihkan pengguna ke halaman daftar buku
     }
 }

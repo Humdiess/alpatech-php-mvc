@@ -143,6 +143,7 @@ class Model
     {
         $conn = $this->Connect();
         // Menghapus data dari database
+        // note : $stmt = statement
         $stmt = $conn->prepare($sql);
         if (!empty($value)) {
             foreach ($value as $Key => $Value) {
