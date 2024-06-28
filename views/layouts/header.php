@@ -52,7 +52,7 @@
                   </li>
                 </ul>
                 <hr class="my-2">
-                <p class="text-muted small">Copyright &copy; 2023 Perpustakaan</p>
+                <p class="text-muted small">Copyright &copy; 2024 hudi</p>
               </div>
             </nav>
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 my-4">

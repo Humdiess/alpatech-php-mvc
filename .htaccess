@@ -5,13 +5,16 @@
 
     RewriteEngine On
 
+    # Mengatur HTTP_AUTHORIZATION header jika Authorization header sudah ada
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
+    # Menghilangkan trailing slash pada URL
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
+    # Menangani permintaan untuk file atau direktori yang tidak ada
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
