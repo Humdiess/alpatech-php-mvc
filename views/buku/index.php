@@ -23,6 +23,7 @@
                     <td><?= htmlspecialchars($B['author_name']) ?></td>
                     <td>
                         <a href="/buku/edit/<?= $B['id'] ?>" class="btn btn-sm btn-warning">Edit</a>
+                        <a href="/buku/show/<?= $B['id'] ?>" class="btn btn-sm btn-info">Detail</a>
                         <a href="/buku/delete/<?= $B['id'] ?>" class="btn btn-sm btn-danger">Hapus</a>
                     </td>
                 </tr>

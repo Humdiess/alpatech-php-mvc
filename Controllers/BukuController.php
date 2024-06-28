@@ -62,6 +62,13 @@ class BukuController extends BaseController
         redirect('buku'); // Mengalihkan pengguna ke halaman daftar buku
     }
 
+    public function show($id) {
+        $Buku = $this->Database->getById($id);
+        $Publishers = $this->Database->getPublishers(); // Mendapatkan data penerbit dari database
+        $Authors = $this->Database->getAuthors(); // Mengambil data buku berdasarkan ID dari database
+        view('buku/detail', compact('Buku', 'Publishers', 'Authors')); // Menampilkan data buku ke tampilan 'buku/show'
+    }
+
     // Fungsi untuk menghapus data buku dari database
     public function delete($id)
     {

@@ -43,6 +43,11 @@ class PublisherController extends BaseController
         redirect('publisher'); // Mengalihkan pengguna ke halaman daftar penerbit
     }
 
+    public function show($id) {
+        $Publisher = $this->Database->getById($id); // Mengambil data penerbit berdasarkan ID dari database
+        view('publisher/detail', compact('Publisher')); // Menampilkan data penerbit ke tampilan 'publisher/show'
+    }
+
     // Fungsi untuk menghapus data penerbit dari database
     public function delete($id)
     {

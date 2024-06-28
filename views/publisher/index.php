@@ -19,6 +19,7 @@
                     <td><?= htmlspecialchars($Publisher['name']) ?></td>
                     <td>
                         <a href="/publisher/edit/<?= $Publisher['id'] ?>" class="btn btn-sm btn-warning">Edit</a>
+                        <a href="/publisher/show/<?= $Publisher['id'] ?>" class="btn btn-sm btn-info">Details</a>
                         <a href="/publisher/delete/<?= $Publisher['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
                     </td>
                 </tr>

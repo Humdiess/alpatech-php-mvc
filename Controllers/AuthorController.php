@@ -43,6 +43,10 @@ class AuthorController extends BaseController
         redirect('author'); // Mengalihkan pengguna ke halaman daftar penulis
     }
 
+    public function show($id) {
+        $Author = $this->Database->getById($id); // Mengambil data penulis berdasarkan ID dari database
+        view('author/detail', compact('Author')); // Menampilkan data penulis ke tampilan 'author/show'
+    }
     // Fungsi untuk menghapus data penulis dari database
     public function delete($id)
     {

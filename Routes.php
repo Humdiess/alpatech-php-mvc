@@ -33,6 +33,12 @@ return [
         'method' => 'update'
     ],
     [
+        "url" => "/buku/show/{id}",
+        "name" => "buku_detail",
+        'controller' => \Controllers\BukuController::class,
+        'method' => 'show'
+    ],
+    [
         "url" => "/buku/delete/{id}",
         "name" => "buku_delete",
         'controller' => \Controllers\BukuController::class,
@@ -70,6 +76,12 @@ return [
         'method' => 'update'
     ],
     [
+        "url" => "/author/show/{id}",
+        "name" => "author_detail",
+        'controller' => \Controllers\AuthorController::class,
+        'method' => 'show'
+    ],
+    [
         "url" => "/author/delete/{id}",
         "name" => "author_delete",
         'controller' => \Controllers\AuthorController::class,
@@ -105,6 +117,12 @@ return [
         "name" => "publisher_update",
         'controller' => \Controllers\PublisherController::class,
         'method' => 'update'
+    ],
+    [
+        "url" => "/publisher/show/{id}",
+        "name" => "publisher_detail",
+        'controller' => \Controllers\PublisherController::class,
+        'method' => 'show'
     ],
     [
         "url" => "/publisher/delete/{id}",
