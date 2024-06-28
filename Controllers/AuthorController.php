@@ -25,7 +25,7 @@ class AuthorController extends BaseController
     {
         $name = $_POST['name']; // Mengambil data 'name' dari form
         $this->Database->create(compact('name')); // Menyimpan data penulis ke database
-        redirect('/author'); // Mengalihkan pengguna ke halaman daftar penulis
+        redirect('author'); // Mengalihkan pengguna ke halaman daftar penulis
     }
 
     // Fungsi untuk menampilkan form edit data penulis
