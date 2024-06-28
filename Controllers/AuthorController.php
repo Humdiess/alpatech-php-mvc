@@ -40,13 +40,13 @@ class AuthorController extends BaseController
     {
         $name = $_POST['name']; // Mengambil data 'name' dari form
         $this->Database->update($id, compact('name')); // Memperbarui data penulis di database
-        redirect('/author'); // Mengalihkan pengguna ke halaman daftar penulis
+        redirect('author'); // Mengalihkan pengguna ke halaman daftar penulis
     }
 
     // Fungsi untuk menghapus data penulis dari database
     public function delete($id)
     {
         $this->Database->delete($id); // Menghapus data penulis berdasarkan ID dari database
-        redirect('/author'); // Mengalihkan pengguna ke halaman daftar penulis
+        redirect('author'); // Mengalihkan pengguna ke halaman daftar penulis
     }
 }

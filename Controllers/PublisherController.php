@@ -25,7 +25,7 @@ class PublisherController extends BaseController
     {
         $name = $_POST['name']; // Mengambil data 'name' dari form
         $this->Database->create(compact('name')); // Menyimpan data penerbit ke database
-        redirect('/publisher'); // Mengalihkan pengguna ke halaman daftar penerbit
+        redirect('publisher'); // Mengalihkan pengguna ke halaman daftar penerbit
     }
 
     // Fungsi untuk menampilkan form edit data penerbit
@@ -40,13 +40,13 @@ class PublisherController extends BaseController
     {
         $name = $_POST['name']; // Mengambil data 'name' dari form
         $this->Database->update($id, compact('name')); // Memperbarui data penerbit di database
-        redirect('/publisher'); // Mengalihkan pengguna ke halaman daftar penerbit
+        redirect('publisher'); // Mengalihkan pengguna ke halaman daftar penerbit
     }
 
     // Fungsi untuk menghapus data penerbit dari database
     public function delete($id)
     {
         $this->Database->delete($id); // Menghapus data penerbit berdasarkan ID dari database
-        redirect('/publisher'); // Mengalihkan pengguna ke halaman daftar penerbit
+        redirect('publisher'); // Mengalihkan pengguna ke halaman daftar penerbit
     }
 }
