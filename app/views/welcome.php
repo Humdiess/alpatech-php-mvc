@@ -1,0 +1,1 @@
+<h1>Selamat datang di mini code igniter</h1>
