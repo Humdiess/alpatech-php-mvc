@@ -3,6 +3,12 @@
 return [
     // Routes for buku
     [
+        "url" => "/",
+        "name" => "buku_index",
+        'controller' => \Controllers\BukuController::class,
+        'method' => 'index'
+    ],
+    [
         "url" => "/buku",
         "name" => "buku_index",
         'controller' => \Controllers\BukuController::class,
