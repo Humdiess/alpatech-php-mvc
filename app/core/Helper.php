@@ -10,7 +10,9 @@ class Helper {
 }
 
 function base_url($uri = '') {
-    return BASEURL . '/' . $uri;
+    $base_url = "http://$_SERVER[HTTP_HOST]/alpatech-php-mvc/public/";
+    return $base_url . ltrim($uri, '/');
 }
+
 
 
