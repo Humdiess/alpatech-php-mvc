@@ -4,7 +4,6 @@
 $routes = [];
 
 // authors
-$routes['/'] = 'AuthorController@index';
 $routes['/author'] = 'AuthorController@index';
 $routes['/author/test'] = 'AuthorController@test';
 $routes['/author/add'] = 'AuthorController@add';

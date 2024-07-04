@@ -4,7 +4,7 @@ require_once __DIR__ . '/../core/Database.php';
 
 class BookModel extends Database
 {
-    protected $table = 'buku'; // nama tabel buku
+    protected $table = 'buku';
     protected $db;
 
     public function __construct()

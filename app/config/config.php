@@ -1,6 +1,6 @@
 <?php 
 
-define('BASEURL', 'http://localhost/alpatech/public');
+define('BASEURL', 'http://localhost/alpatech-php-mvc/public');
 
 //db
 define('DB_HOST', 'localhost');

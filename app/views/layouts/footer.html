@@ -10,7 +10,7 @@
         var linkPublisher = document.getElementById('link-publisher');
         var linkBook = document.getElementById('link-book');
 
-        if (window.location.pathname.includes('/author')) {
+        if (window.location.pathname.includes('/author' || '/')) {
             linkAuthor.classList.add('active');
         } else if (window.location.pathname.includes('/publisher')) {
             linkPublisher.classList.add('active');
