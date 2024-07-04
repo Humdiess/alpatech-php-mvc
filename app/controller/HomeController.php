@@ -6,7 +6,7 @@ class HomeController extends Controller {
         $data = [
             'title' => 'Home | AlpaTech',
         ];
-        $this->view('welcome', $data);
+        $this->view('dashboard/index', $data);
     }
 }
 
