@@ -2,7 +2,10 @@
 
 class WelcomeController extends Controller {
     public function index() {
-        $this->view('welcome');
+        $data = [
+            'title' => 'Halaman Utama',
+        ];
+        $this->view('welcome', $data);  
     }
 }
 
