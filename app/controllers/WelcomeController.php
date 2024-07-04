@@ -7,5 +7,9 @@ class WelcomeController extends Controller {
         ];
         $this->view('welcome', $data);  
     }
+
+    public function about() {
+        $this->view('about');
+    }
 }
 

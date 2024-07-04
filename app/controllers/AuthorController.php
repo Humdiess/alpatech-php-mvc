@@ -8,9 +8,11 @@ class AuthorController extends Controller
 {
     private $authorModel;
 
+
     public function __construct()
     {
         $this->authorModel = new AuthorModel();
+        error_log('AuthorController terbaca');
     }
 
     public function index()

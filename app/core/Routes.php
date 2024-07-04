@@ -5,6 +5,7 @@
 $routes = [];
 
 $routes['/'] = 'WelcomeController@index';
+$routes['about'] = 'WelcomeController@about';
 // Contoh rute untuk AuthorController
 $routes['author/index'] = 'AuthorController@index';
 $routes['author/add'] = 'AuthorController@add';
