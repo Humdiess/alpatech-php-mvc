@@ -1,9 +1,8 @@
 <?php 
-$root=(isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'];
+$root = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $_SERVER['HTTP_HOST'];
+$root .= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
 
-$root = str_replace(basename($_SERVER['SCRIPT_NAME']),'', $_SERVER['SCRIPT_NAME']);
-
-define('BASE_URL', $root);  
+define('BASE_URL', rtrim($root, '/') . '/');
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');

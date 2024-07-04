@@ -16,7 +16,7 @@
                         <td><?= $author['id']; ?></td>
                         <td><?= $author['name']; ?></td>
                         <td>
-                            <a href="<?= base_url('author/detail/' . $author['id']); ?>" class="btn btn-info btn-sm me-2">Detail</a>
+                            <a href="<?= BASE_URL('author/detail/' . $author['id']); ?>" class="btn btn-info btn-sm me-2">Detail</a>
                             <a href="<?= base_url('author/edit/' . $author['id']); ?>" class="btn btn-warning btn-sm me-2">Edit</a>
                             <a href="<?= base_url('author/delete/' . $author['id']); ?>" class="btn btn-danger btn-sm">Delete</a>
                         </td>

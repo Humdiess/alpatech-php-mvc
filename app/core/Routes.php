@@ -22,7 +22,7 @@ $routes['POST:/publisher/update'] = 'PublisherController@update';
 $routes['GET:/publisher/detail/{id}'] = 'PublisherController@detail';
 $routes['POST:/publisher/delete/{id}'] = 'PublisherController@delete';
 
-// book
+// books
 $routes['GET:/book'] = 'BookController@index';
 $routes['GET:/book/add'] = 'BookController@add';
 $routes['POST:/book/save'] = 'BookController@save';
@@ -30,4 +30,3 @@ $routes['GET:/book/edit/{id}'] = 'BookController@edit';
 $routes['POST:/book/update'] = 'BookController@update';
 $routes['GET:/book/detail/{id}'] = 'BookController@detail';
 $routes['POST:/book/delete/{id}'] = 'BookController@delete';
-
