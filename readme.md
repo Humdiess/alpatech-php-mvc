@@ -4,7 +4,8 @@ Selamat datang di projek MVC PHP Native dengan CRUD! Projek ini dipelajari oleh 
 
 # Cara memakai
 1. Clone repositori ini ke folder htdocs
-2. Buka http://localhost/alpatech-php-mvc/public/
+   ``` https://github.com/Humdiess/alpatech-php-mvc
+3. Buka http://localhost/alpatech-php-mvc/public/
 
 ## Latar Belakang
 
