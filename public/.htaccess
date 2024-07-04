@@ -1,5 +1,9 @@
 RewriteEngine On
 RewriteBase /alpatech-php-mvc/public
+
+# Untuk permintaan langsung ke file atau direktori yang ada, lewati aturan berikut
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+
+# Alihkan semua permintaan yang tidak mengarah ke file atau direktori yang ada ke index.php
 RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

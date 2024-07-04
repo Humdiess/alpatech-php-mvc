@@ -2,7 +2,7 @@
     <div class="container mt-5">
         <h1 class="mb-4"><?php echo $data['title']; ?></h1>
         <a href="<?php echo base_url('publisher/add'); ?>" class="btn btn-primary mb-3">Add New Publisher</a>
-        <table class="table">
+        <table class="table table-dark">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
